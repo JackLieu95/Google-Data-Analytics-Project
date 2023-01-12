@@ -1,0 +1,1 @@
+for file in *.csv; do mysql --local_infile=1 --user=root --password=Mayvitinh1995$ coursera -e "load data local infile '"$file"' into table cyclic FIELDS TERMINATED BY ',' ENCLOSED BY '\"' LINES TERMINATED BY '\r\n' IGNORE 1 LINES " ;done
